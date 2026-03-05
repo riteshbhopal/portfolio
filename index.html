@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritesh Agarwal's Projects</title>
+    <!-- Tailwind CSS CDN (for beautiful, responsive design with zero setup) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .project-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Navbar -->
+    <nav class="bg-white border-b border-gray-200 py-4 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 bg-blue-600 text-white rounded-2xl flex items-center justify-center text-2xl font-bold">RA</div>
+                <span class="text-2xl font-semibold tracking-tight">Ritesh Agarwal</span>
+            </div>
+            <div class="text-sm font-medium text-gray-500">PROJECTS</div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg text-white py-24">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold tracking-tighter mb-4">
+                My Projects
+            </h1>
+            <p class="text-xl md:text-2xl text-blue-100 max-w-2xl mx-auto">
+                Building tools that make learning and school management smarter, simpler, and more effective.
+            </p>
+        </div>
+    </header>
+
+    <!-- Projects Grid -->
+    <main class="max-w-6xl mx-auto px-6 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Project 1: School Vibe -->
+            <div class="project-card bg-white rounded-3xl shadow-md overflow-hidden border border-gray-100">
+                <div class="h-2 bg-gradient-to-r from-blue-500 to-cyan-400"></div>
+                <div class="p-8">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="text-4xl">📊</span>
+                        <h2 class="text-3xl font-semibold tracking-tight">School Vibe</h2>
+                    </div>
+                    
+                    <a href="https://schoolvibe.studytube.co.in" 
+                       target="_blank"
+                       class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium text-lg mb-6">
+                        schoolvibe.studytube.co.in
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L9 15" />
+                        </svg>
+                    </a>
+                    
+                    <p class="text-gray-600 leading-relaxed text-[15px]">
+                        School Vibe supports school administrators, principals, and district leaders in managing institutions through data-driven insights. 
+                        The platform analyzes student performance data such as test scores, internal assessments, and GPA trends to identify learning gaps and 
+                        high-performing groups. The system also assists with curriculum alignment by reviewing existing teaching plans against state standards 
+                        or framework requirements.
+                    </p>
+                    
+                    <div class="mt-8 text-xs uppercase tracking-widest text-gray-400 font-medium">🏫 Education Management • Analytics</div>
+                </div>
+            </div>
+
+            <!-- Project 2: Concept Rozana -->
+            <div class="project-card bg-white rounded-3xl shadow-md overflow-hidden border border-gray-100">
+                <div class="h-2 bg-gradient-to-r from-purple-500 to-violet-400"></div>
+                <div class="p-8">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="text-4xl">📘</span>
+                        <h2 class="text-3xl font-semibold tracking-tight">Concept Rozana</h2>
+                    </div>
+                    
+                    <a href="https://conceptrozana.studytube.co.in" 
+                       target="_blank"
+                       class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium text-lg mb-6">
+                        conceptrozana.studytube.co.in
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L9 15" />
+                        </svg>
+                    </a>
+                    
+                    <p class="text-gray-600 leading-relaxed text-[15px]">
+                        Concept Rozana helps you master subjects through one concept each day. The app presents the concept through short video or audio lessons, 
+                        followed by quizzes and practice tasks. Your learning runs in a daily streak format, which builds discipline and consistency. 
+                        Each completed pack strengthens concept clarity and exam confidence through small, focused steps.
+                    </p>
+                    
+                    <div class="mt-8 text-xs uppercase tracking-widest text-gray-400 font-medium">🔥 Daily Learning • Micro-Learning</div>
+                </div>
+            </div>
+
+            <!-- Project 3: Physics Coach -->
+            <div class="project-card bg-white rounded-3xl shadow-md overflow-hidden border border-gray-100">
+                <div class="h-2 bg-gradient-to-r from-emerald-500 to-teal-400"></div>
+                <div class="p-8">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="text-4xl">⚡</span>
+                        <h2 class="text-3xl font-semibold tracking-tight">Physics Coach</h2>
+                    </div>
+                    
+                    <a href="https://physicscoach.studytube.co.in" 
+                       target="_blank"
+                       class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium text-lg mb-6">
+                        physicscoach.studytube.co.in
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L9 15" />
+                        </svg>
+                    </a>
+                    
+                    <p class="text-gray-600 leading-relaxed text-[15px]">
+                        Physics Coach trains students for physics exams through structured, performance-driven practice. The system adapts question difficulty 
+                        based on your performance, detects weak topics from mistakes, and shows clear analytics on accuracy, speed, and progress. 
+                        Timed tests follow real exam patterns, which builds speed and confidence.
+                    </p>
+                    
+                    <div class="mt-8 text-xs uppercase tracking-widest text-gray-400 font-medium">📘 Adaptive Practice • Exam Prep</div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Add more projects note -->
+        <div class="mt-16 text-center">
+            <div class="inline-flex items-center gap-2 bg-white px-6 py-3 rounded-2xl border border-gray-200 text-sm text-gray-500">
+                💡 <span class="font-medium">Want to add more projects?</span> 
+                Just copy any card above, paste it inside the grid, and update the title/link/description. Super easy!
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-10">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-gray-400 text-sm">
+                Made with ❤️ for better education • 
+                <a href="https://studytube.co.in" class="hover:text-blue-600 transition-colors">studytube.co.in</a>
+            </p>
+            <p class="text-xs text-gray-400 mt-3">
+                © 2026 Ritesh Agarwal • Deployed on GitHub Pages
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Tailwind script already loaded via CDN
+        console.log('%c✅ Ritesh Agarwal Projects Page Ready!', 'color:#3b82f6;font-weight:600');
+    </script>
+</body>
+</html>
